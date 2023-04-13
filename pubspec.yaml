@@ -52,6 +52,7 @@ dependencies:
   bubble_tab_indicator: ^0.1.6
   iconsax: ^0.0.8
   # geocoding: ^2.1.0
+  charts_flutter:
 
 dev_dependencies:
   flutter_test:
