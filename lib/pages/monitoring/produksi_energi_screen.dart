@@ -101,10 +101,15 @@ class _ProduksiEnergiScreenState extends State<ProduksiEnergiScreen> {
                         borderRadius:
                             BorderRadius.circular(20.0), //<-- SEE HERE
                       ),
-                      child: const ListTile(
-                        leading: Icon(Icons.check_circle),
-                        title: Text('Hello World'),
-                        trailing: Icon(Icons.more_vert),
+                      child: Container(
+                        padding: const EdgeInsets.all(10),
+                        child: const Text(
+                          'Bulanan',
+                          style: TextStyle(
+                              color: Colors.black54,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     Card(
