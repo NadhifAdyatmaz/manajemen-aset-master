@@ -54,6 +54,9 @@ class _ProduksiEnergiScreenState extends State<ProduksiEnergiScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: const IconThemeData(
+          color: Color.fromARGB(255, 12, 144, 124), //change your color here
+        ),
         backgroundColor: const Color.fromARGB(0, 255, 255, 255),
         elevation: 0,
         title: const Text(
@@ -98,15 +101,10 @@ class _ProduksiEnergiScreenState extends State<ProduksiEnergiScreen> {
                         borderRadius:
                             BorderRadius.circular(20.0), //<-- SEE HERE
                       ),
-                      child: Container(
-                        padding: const EdgeInsets.all(10),
-                        child: const Text(
-                          'Bulanan',
-                          style: TextStyle(
-                              color: Colors.black54,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold),
-                        ),
+                      child: const ListTile(
+                        leading: Icon(Icons.check_circle),
+                        title: Text('Hello World'),
+                        trailing: Icon(Icons.more_vert),
                       ),
                     ),
                     Card(
