@@ -1,6 +1,6 @@
 # manajemen_aset
 
-A new Flutter project.
+![5 Halaman grafik produksi energi](img/UTS.png)
 
 ## Getting Started
 
