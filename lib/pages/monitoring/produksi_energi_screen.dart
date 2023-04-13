@@ -137,6 +137,58 @@ class _ProduksiEnergiScreenState extends State<ProduksiEnergiScreen> {
               ProduksiEnergiChart(
                 idCluster: widget.idCluster,
               ),
+              Row(
+                children: [
+                  Expanded(child: Icon(Icons.insert_chart)),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("PLTB"),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(child: Icon(Icons.insert_chart)),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("PLTS"),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(child: Icon(Icons.insert_chart)),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Diesel"),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(child: Icon(Icons.insert_chart)),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Load"),
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
               Expanded(
                 child: charts.LineChart(
                   _getSeriesData(),
